@@ -1,0 +1,26 @@
+.button_container {
+  margin: auto;
+  text-align: center;
+}
+
+
+.grid {
+  height: 75%;
+  width: 960px;
+  overflow: auto;
+  margin: auto;
+}
+
+.grid_square {
+  border: 1px solid black;
+  margin: 1px;
+  display: inline-block;
+  float: left
+}
+
+.grid_row {
+  clear: both;
+}
+
+.grid_square_hover {
+}
