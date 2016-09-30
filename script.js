@@ -21,7 +21,7 @@ $(document).ready(function() {
       $(this).css('background-color', hue);
     });
 
-    $('.grid_square').on("swipe", function() {
+    $('.grid_square').on("tap", function() {
       $(this).addClass('grid_square_hover');
       $(this).css('background-color', hue);
     });
@@ -47,7 +47,7 @@ var changeGridSize = function() {
     $(this).css('background-color', hue);
   });
 
-  $('.grid_square').on("swipe", function() {
+  $('.grid_square').on("tap", function() {
     $(this).addClass('grid_square_hover');
     $(this).css('background-color', hue);
   });
