@@ -21,7 +21,7 @@ $(document).ready(function() {
       $(this).css('background-color', hue);
     });
 
-    $('.grid_square').on("tap", function() {
+    $('.grid_square').on("swipe", function() {
       $(this).addClass('grid_square_hover');
       $(this).css('background-color', hue);
     });
@@ -43,6 +43,11 @@ var changeGridSize = function() {
   $('.grid_square').css('height', square_size);
 
   $('.grid_square').mouseenter(function() {
+    $(this).addClass('grid_square_hover');
+    $(this).css('background-color', hue);
+  });
+
+  $('.grid_square').on("swipe", function() {
     $(this).addClass('grid_square_hover');
     $(this).css('background-color', hue);
   });
